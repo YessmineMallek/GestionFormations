@@ -1,9 +1,5 @@
 # GestionFormations
-Ce projet vise le développement d’un site Web permettant la gestion de formations. Le site va utiliser
-la base de données suivante :
-Utilisateur (login, password, nom, cin, date_naiss, email, role) // role (0 : utilisateur, 1 : admin)
-Formation (id, intitulé, formateur, description, date, nbPlace, nbReservation, prix, score, nbScore)
-Reservation (id, etat, #login, #id_formation) // etat (0 : en attente, 1 : confirmé)
+Ce projet vise le développement d’un site Web permettant la gestion de formations. 
 Le site va être composé des pages suivantes :
 	-)index.html:permet à un utilisateur ou un administrateur de se connecter au site en
          fournissant un login et mot de passe.
@@ -25,11 +21,15 @@ Le site va être composé des pages suivantes :
 			- Nom du formateur
 			- Date
 			- Prix
-			- Nombre de places disponibles (nbPlace – nbReservation)
+			- Nombre de places disponibles 
 			- Score  = (nbScore *score + newScore)/(nbScore + 1) (sous forme de 5 étoiles)
 			- Etat de la réservation
 
 *les outils utilisés
 	-vscode
 	-xampp
+Le site va utiliser la base de données suivante :
+Utilisateur (login, password, nom, cin, date_naiss, email, role) // role (0 : utilisateur, 1 : admin)
+Formation (id, intitulé, formateur, description, date, nbPlace, nbReservation, prix, score, nbScore)
+Reservation (id, etat, #login, #id_formation) // etat (0 : en attente, 1 : confirmé)
 		
